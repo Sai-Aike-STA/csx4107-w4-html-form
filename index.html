@@ -1,0 +1,63 @@
+<!doctype html>
+
+<!-- this is an assignment file -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 10px;
+            /*padding: auto;*/
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+        }
+        
+        .border-style {
+            border-color: lightgray;
+            border-radius:10px
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Form Elements Assignments</h1>
+<form action="https://teach-backend-fawn.vercel.app/api/product" method="POST" enctype="multipart/form-data">
+
+
+<fieldset style=".border-style">
+    <legend>General Info</legend>
+    <div>
+        <label for="itemName">Item Name</label>
+        <input
+            type="text"
+            id="itemName"
+            name="itemName"
+            value=""
+            />
+        
+    </div>
+    
+    <div>
+        <label for="itemDescription">Item Price</label>
+        <textarea
+            id="itemDescription"
+            name="itemDescription"
+            cols="30"
+            rows="10"
+            ></textarea>
+    </div>
+    
+    
+    
+</fieldset>
+
+
+</form>
+</body>
+</html>
