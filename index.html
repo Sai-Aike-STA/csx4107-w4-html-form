@@ -8,102 +8,108 @@
     <style>
         body {
             margin: 0;
-            padding: 30px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
+            font-size: 1rem;
             background-color: white;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 30px;
         }
 
         form {
             width: 100%;
-            max-width: 1125px;
+            max-width: 70rem;
+            box-sizing: border-box;
         }
 
         fieldset {
-            border: 2px solid lightgray;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            padding: 12px 16px 20px 16px;
+            border: 0.1rem solid lightgray;
+            border-radius: 0.4rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem 1.25rem;
+            box-sizing: border-box;
         }
 
         legend {
-            padding: 0 4px;
+            padding: 0 0.25rem;
         }
 
         .form-row {
             /* This makes the children inside .form-row line up horizontally instead of vertically. */
-            display: flex; 
+            display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
+            gap: 0.4rem 1rem;
             /*extra space so the form doesnt look cramped*/
-            margin-bottom: 10px;
+            margin-bottom: 0.75rem;
         }
 
-        label {
-            width: 220px;
+        .form-row > label {
+            flex: 0 0 12rem;
         }
 
         input[type="text"],
         input[type="number"],
         input[type="email"] {
-            width: 260px;
-            height: 30px;
-            font-size: 18px;
-            padding: 2px 6px;
+            width: 100%;
+            max-width: 16rem;
+            min-width: 12rem;
+            height: 2rem;
+            font-size: 1rem;
+            padding: 0.2rem 0.4rem;
             box-sizing: border-box;
         }
 
         textarea {
-            width: 875px;
-            height: 140px;
-            font-size: 18px;
-            padding: 6px;
+            flex: 1 1 20rem;
+            min-width: 12rem;
+            min-height: 8rem;
+            font-size: 1rem;
+            padding: 0.4rem;
             box-sizing: border-box;
             resize: vertical;
         }
 
         select {
-            width: 155px;
-            height: 36px;
-            font-size: 18px;
-            padding: 4px;
+            min-width: 10rem;
+            height: 2rem;
+            font-size: 1rem;
+            padding: 0.2rem;
         }
 
         .inline-group {
             display: flex;
             align-items: center;
-            gap: 4px;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            flex: 1 1 20rem;
+            min-width: 12rem;
         }
 
         .inline-group label {
-            width: auto;
-            margin-right: 8px;
+            margin-right: 0.5rem;
         }
 
         input[type="checkbox"],
         input[type="radio"] {
-            width: 18px;
-            height: 18px;
+            width: 1rem;
+            height: 1rem;
             margin: 0;
         }
 
         .submit-row {
             display: flex;
             justify-content: flex-end;
-            margin-top: 20px;
+            margin-top: 1rem;
         }
 
         button {
             background-color: blue;
             color: white;
-            font-size: 20px;
-            padding: 10px 16px;
-            border-radius: 6px;
-            border: 2px solid black;
+            font-size: 1.1rem;
+            padding: 0.6rem 0.9rem;
+            border-radius: 0.4rem;
+            border: 0.1rem solid black;
             cursor: pointer;
         }
     </style>
@@ -147,8 +153,6 @@
         </div>
     </fieldset>
 
-    <br>
-
     <fieldset>
         <legend>Misc.</legend>
 
@@ -159,7 +163,7 @@
                 id="inventoryAmount"
                 name="inventoryAmount"
             >
-<!--        input type number makes it so that non-numbers cannot be typed-->
+            <!--        input type number makes it so that non-numbers cannot be typed-->
         </div>
 
         <div class="form-row">
@@ -223,8 +227,6 @@
             </div>
         </div>
     </fieldset>
-    
-    <br>
 
     <fieldset>
         <legend>Staff</legend>
