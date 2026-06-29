@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<!-- This is is a generated file for code usage reference -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements Demo</title>
+</head>
+<body>
+
+    <h1>HTML Form Elements Demo</h1>
+
+    <form action="form_submit_test.html" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    size="20"
+                    maxlength="50"
+                    value="JohnDoe"
+                />
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                />
+            </div>
+
+            <br>
+
+            <div>
+                <label for="birthDate">Birth Date:</label>
+                <input
+                    type="date"
+                    id="birthDate"
+                    name="birthDate"
+                />
+            </div>
+
+            <br>
+
+            <div>
+                <label for="salary">Salary:</label>
+                <input
+                    type="number"
+                    id="salary"
+                    name="salary"
+                    min="0"
+                    max="100000"
+                    value="20000"
+                />
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Favorite Language (Radio Buttons)</legend>
+
+            <input
+                type="radio"
+                id="html"
+                name="fav_language"
+                value="HTML"
+            />
+            <label for="html">HTML</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="css"
+                name="fav_language"
+                value="CSS"
+            />
+            <label for="css">CSS</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Vehicles (Checkboxes)</legend>
+
+            <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle[]"
+                value="Bike"
+            />
+            <label for="vehicle1">I have a bike</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="vehicle2"
+                name="vehicle[]"
+                value="Car"
+            />
+            <label for="vehicle2">I have a car</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="vehicle3"
+                name="vehicle[]"
+                value="Boat"
+            />
+            <label for="vehicle3">I have a boat</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>File Upload</legend>
+
+            <div>
+                <label for="f1">Single File:</label>
+                <input
+                    type="file"
+                    id="f1"
+                    name="f1"
+                />
+            </div>
+
+            <br>
+
+            <div>
+                <label for="f2">Multiple Files:</label>
+                <input
+                    type="file"
+                    id="f2"
+                    name="f2"
+                    multiple
+                />
+            </div>
+
+            <br>
+
+            <div>
+                <label for="f3">PDF or DOCX:</label>
+                <input
+                    type="file"
+                    id="f3"
+                    name="f3"
+                    accept=".pdf,.docx"
+                />
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Country Selection</legend>
+
+            <select id="country" name="country">
+                <option value="TH">Thailand</option>
+                <option value="UK" selected>United Kingdom</option>
+                <option value="USA">United State</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Description</legend>
+
+            <textarea
+                id="description"
+                name="description"
+                cols="50"
+                rows="5"
+            >Enter your description here...</textarea>
+        </fieldset>
+
+        <br>
+
+        <input
+            type="submit"
+            id="submitBtn"
+            name="submitBtn"
+            value="Ok"
+        />
+
+        <input
+            type="reset"
+            id="resetBtn"
+            name="resetBtn"
+            value="Clear"
+        />
+
+    </form>
+
+</body>
+</html>
