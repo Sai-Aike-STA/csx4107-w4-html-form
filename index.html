@@ -36,8 +36,10 @@
         }
 
         .form-row {
-            display: flex;
+            /* This makes the children inside .form-row line up horizontally instead of vertically. */
+            display: flex; 
             align-items: flex-start;
+            /*extra space so the form doesnt look cramped*/
             margin-bottom: 10px;
         }
 
@@ -136,14 +138,16 @@
         <div class="form-row">
             <label for="category">Category</label>
             <select id="category" name="category">
-                <option value="notSpecified">notSpecified</option>
-                <option value="consumption">consumption</option>
-                <option value="household">household</option>
-                <option value="electronic">electronic</option>
-                <option value="gadget">gadget</option>
+                <option value="notSpecified">Not Specified</option>
+                <option value="consumption">Consumption</option>
+                <option value="household">Household</option>
+                <option value="electronic">Electronic</option>
+                <option value="gadget">Gadget</option>
             </select>
         </div>
     </fieldset>
+
+    <br>
 
     <fieldset>
         <legend>Misc.</legend>
@@ -155,6 +159,7 @@
                 id="inventoryAmount"
                 name="inventoryAmount"
             >
+<!--        input type number makes it so that non-numbers cannot be typed-->
         </div>
 
         <div class="form-row">
@@ -218,6 +223,8 @@
             </div>
         </div>
     </fieldset>
+    
+    <br>
 
     <fieldset>
         <legend>Staff</legend>
@@ -228,6 +235,7 @@
                 type="email"
                 id="staffEmail"
                 name="staffEmail"
+                value="u6712122@au.edu"
             >
         </div>
     </fieldset>
